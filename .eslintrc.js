@@ -80,6 +80,8 @@ module.exports = defineConfig({
     ],
     // 强制使用驼峰
     camelcase: ['error', { properties: 'always' }],
+    // 关闭驼峰命名规则
+    'vue/multi-word-component-names': 0,
     // 优先使用 const
     'prefer-const': [
       'error',

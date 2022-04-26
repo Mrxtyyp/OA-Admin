@@ -4,9 +4,9 @@ import { AxiosResponse } from 'axios'
 import type { RequestConfig } from './request/types'
 
 interface YWZResponse<T> {
-  statusCode: number
-  desc: string
-  result: T
+  code: number
+  msg: string
+  data: T
 }
 interface YWZRequestConfig<T, R> extends RequestConfig<YWZResponse<R>> {
   data?: T
