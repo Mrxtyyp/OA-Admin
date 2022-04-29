@@ -1,8 +1,8 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
 import type { RouteRecordRaw } from 'vue-router'
 
-import Layout from '@/layout/index.vue'
-import Default from '@/layout/default.vue'
+import Layout from '@/layouts/menuLayout/index.vue'
+import Default from '@/layouts/default.vue'
 
 // 配置路由信息
 const routes: RouteRecordRaw[] = [

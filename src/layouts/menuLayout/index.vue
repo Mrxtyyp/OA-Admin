@@ -3,7 +3,7 @@
     <el-aside :class="['nav-side', isCollapse ? 'fold' : 'unfold']">
       <!-- 系统LOGO -->
       <div class="logo">
-        <img src="../assets/logo.png" />
+        <img src="~@/assets/logo.png" />
         <span v-if="!isCollapse">Manager</span>
       </div>
 
@@ -52,7 +52,7 @@
           </el-dropdown>
         </div>
       </el-header>
-      <el-main>
+      <el-main class="container">
         <router-view></router-view>
       </el-main>
     </el-container>
@@ -140,6 +140,7 @@ onMounted(() => {
 
   .content-right {
     margin-left: 200px;
+    transition: margin-left 0.5s;
     // 合并
     &.fold {
       margin-left: 64px;
