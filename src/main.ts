@@ -12,4 +12,13 @@ import 'element-plus/theme-chalk/el-message-box.css'
 
 import PageTableLayout from './layouts/pageTableLayout'
 
-createApp(App).use(store).use(router).use(PageTableLayout).mount('#app')
+const app = createApp(App)
+
+import * as Icons from '@element-plus/icons-vue'
+
+// 注册Icons 全局组件
+Object.keys(Icons).forEach(key => {
+  app.component((Icons as any)[key].name, (Icons as any)[key])
+})
+
+app.use(store).use(router).use(PageTableLayout).mount('#app')

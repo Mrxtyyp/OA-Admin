@@ -1,16 +1,17 @@
 export interface MenuIneterface {
-  parentId: string
-  _id: number
-  menuType: number
-  menuName: string
-  menuCode: string
-  path?: string
+  parentId: number
+  id: string
+  type: string
+  name: string
+  path: string
   icon?: string
+  code?: string
   order?: string
-  component?: string
-  children?: MenuIneterface[]
+  children: MenuIneterface[] | undefined
   action?: MenuIneterface[]
 }
+
+export type IMenu = Omit<MenuIneterface, 'children' | 'action' | 'id'>
 
 export interface UserInterface {
   userId: string
@@ -23,4 +24,17 @@ export interface UserInterface {
   state: string
   role: string
   token?: string
+}
+
+// 分页参数
+export interface PageParams {
+  page: number
+  size: number
+}
+
+export interface IRole {
+  id?: string
+  name: string
+  remark?: string
+  permission: string
 }

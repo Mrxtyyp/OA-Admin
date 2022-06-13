@@ -116,6 +116,9 @@ a{
     
     .page-content{
         height: calc(100vh - 50px - 160px);
+        &.not-pagination {
+            height: calc(100vh - 50px - 110px);
+        }
     }
 
     .page-pagination{

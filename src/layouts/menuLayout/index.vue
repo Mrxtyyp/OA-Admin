@@ -39,7 +39,7 @@
           <el-dropdown class="dropdown-box" @command="handleLogout">
             <span class="user-link">
               {{ userStore.userInfo.userName }}
-              <el-icon><Right /></el-icon>
+              <el-icon><Avatar /></el-icon>
             </span>
             <template #dropdown>
               <el-dropdown-menu>
@@ -171,7 +171,7 @@ onMounted(() => {
         }
         .user-link {
           cursor: pointer;
-          color: #409eff;
+          //   color: #409eff;
         }
       }
       .dropdown-box {

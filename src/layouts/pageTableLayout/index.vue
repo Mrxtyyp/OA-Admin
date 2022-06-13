@@ -12,6 +12,7 @@ export default {
  *      pagination 分页
  * @param title 左上角的名称，可不传，自动获取路由的title
  */
+import { useSlots } from 'vue'
 import { useRoute } from 'vue-router'
 defineProps({
   title: {
@@ -21,6 +22,8 @@ defineProps({
 })
 
 const route = useRoute()
+
+const solts = useSlots()
 </script>
 <template>
   <div class="page-layout full">
@@ -35,7 +38,7 @@ const route = useRoute()
         <slot name="btns" />
       </div>
     </div>
-    <div class="page-content">
+    <div :class="['page-content', !solts.pagination && 'not-pagination']">
       <slot name="table" />
     </div>
     <div class="page-pagination">
