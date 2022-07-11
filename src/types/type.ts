@@ -8,6 +8,7 @@ export interface MenuIneterface {
   code?: string
   order?: string
   children: MenuIneterface[] | undefined
+  hasChildren?: boolean
   action?: MenuIneterface[]
 }
 

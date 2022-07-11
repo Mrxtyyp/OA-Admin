@@ -13,7 +13,6 @@
           row-key="id"
           border
           height="100%"
-          :tree-props="{ children: 'children' }"
         >
           <el-table-column
             prop="name"
@@ -128,7 +127,7 @@
 
 <script setup lang="ts">
 import {
-  menuTreeApi,
+  menuListApi,
   menuDeleteApi,
   menuAddApi,
   menuUpdateApi,
@@ -179,7 +178,7 @@ const rules = reactive<FormRules>({
 })
 // 获取菜单树
 const getMenuTree = async () => {
-  const { data } = await menuTreeApi()
+  const { data } = await menuListApi()
   menuTreeData.value = data
 }
 // 删除菜单
