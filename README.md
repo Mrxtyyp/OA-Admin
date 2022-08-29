@@ -15,15 +15,11 @@
 8. 封装的比较完善的 axios
 
 
-## clone🐉
+## clone
 
-这个是创建项目的第一步，可以按照我写的，你也可以随意发挥~
-
-方式一：点击[Use this template](https://github.com/dishait/tov-template/generate)按钮，直接使用这个模板；
-
-方式二：使用 `git clone` 命名，命令如下：
+使用 `git clone` 命名，命令如下：
 ```bash
-git clone https://github.com/dishait/tov-template.git
+git clone https://github.com/Mrxtyyp/OA-Admin.git
 ```
 
 方式三：自行发挥~。
@@ -66,4 +62,4 @@ npm run lint
 
 ## 使用说明:pencil:
 
-待更新
+与之对应的[后台项目地址](https://github.com/Mrxtyyp/OA-Server)
